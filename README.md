@@ -1,12 +1,3 @@
-5. Short Write-up / Documentation
-In a README.md or equivalent:
-Approach: Summarize your data cleaning, EDA, and recommendation steps.
-Challenges & Insights: Note any interesting or surprising findings about the data (e.g., big outliers in budget).
-Instructions: 
-How to run your code (Python version, libraries, etc.).
-If using a dashboard tool, include the link or file to open.
-If you’ve built a function recommend_movies(), show an example of how to call it.
-
 ### Approach to Building Recommnder system for movie dataset 
 The first step was to explore the data. i found the ffg insights during exploration 
 - The homepage column contained too many missing values, therefore i dropped it
@@ -23,22 +14,22 @@ After analysis and cleaning, the next step was building the recommender, and the
 - vectorize this feature and compute item-item similarity with it using cosine similarity
 - write a function that takes a movie name and returns the most similar movies from our dataset after computing similarity
 
-# Dashboard 
+### Dashboard 
  I built my dashboards with streamlit and plotly to make them interactive
 
 
-# How to run the code
+### How to run the code
 - clone the repostitory to your local machine
 - run ```pip install -r requirements.txt```
 - run the notebooks in the following order: data_cleaning.ipynb -> recommendations.ipynb
 - you can then run the dashboard.py file using the command ```streamlit run dashboard.py```
 
-# Test the recommender 
+### Test the recommender 
 - in your command line or terminal, run `python recommender.py`
 - Enter the name of the movie and hit enter
 - Get recommendations
 
-# Note: Yet to be implemeted due to time constraint:
+### Note: Yet to be implemeted due to time constraint:
 - Proper error handling
 - Sorting input movie titles to match structure of movie titles in dataset
 - proper training and testing splits
